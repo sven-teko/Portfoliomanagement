@@ -49,4 +49,5 @@ for symbol in tickers:
 
     print("Schlusskurse:")
     print(closes)
+    
     time.sleep(0.5)

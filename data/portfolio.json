@@ -1,0 +1,26 @@
+{
+    "as_of": "",
+    "items": [
+      { "symbol": "NESN.SW", "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "NOVN.SW", "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "ROG.SW",  "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "UBSG.SW", "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "ZURN.SW", "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "ABBN.SW", "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "SIKA.SW", "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "LOGN.SW", "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "CFR.SW",  "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "SREN.SW", "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+  
+      { "symbol": "AAPL",    "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "AMZN",    "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "MSFT",    "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "GOOGL",   "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "TSLA",    "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "META",    "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "NVDA",    "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "JPM",     "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "V",       "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" },
+      { "symbol": "MA",      "name": "", "exchange": "", "currency": "", "industry": "", "last_30_closes": [], "fetched_at": "" }
+    ]
+  }
