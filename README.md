@@ -23,3 +23,10 @@ Datum/Zeit: (DD-MM-YYYY)
 Fehlwerte: leer oder NaN
 
 Dateinamen: data/<layer>/<TICKER>.<typ>.csv
+
+# need-to-know
+
+[Download latest Release](https://github.com/sven-teko/Portfoliomanagement/releases)
+Python version 3.0.3 wurde verwendet
+
+ausführen setzt "pip install yfinance" vorraus wenn requirements nicht korrekt geladen werden kann.
