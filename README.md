@@ -11,8 +11,7 @@ Die Daten werden über das Python-Paket yfinance API abgerufen und in einer klar
 
 Liste der gewünschten Fonds/ETFs:
 
-
-- Yahoo Finance via yfinance
+- [Yahoo Finance](https://finance.yahoo.com) via [yfinance](https://pypi.org/project/yfinance/)
 - Repository-CSV
 
 # Datenformat & Schema
