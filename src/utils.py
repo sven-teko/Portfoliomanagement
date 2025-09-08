@@ -20,7 +20,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-# Writer der Daten
+# Schreiben der Daten in UTF-8
 
 def ensure_outdir(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)

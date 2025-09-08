@@ -29,7 +29,6 @@ tickers = [
 ]
 
 # Fetch-helfer
-
 def get_info_safe(t):
     try:
         return t.get_info() or {}
@@ -130,8 +129,7 @@ def build_portfolio(print_console: bool):
 
     return {"as_of": as_of, "items": items}
 
-# Ausführmodus
-
+# Führt Textmodus aus
 def run_text():
     logger.info("Starte run_text Mode")
     obj = build_portfolio(True)
@@ -149,7 +147,6 @@ def run_json():
     menu_open_file()
 
 # CLI
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--json", action="store_true")
