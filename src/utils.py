@@ -5,6 +5,8 @@ import xml.etree.ElementTree as ET
 import platform
 import subprocess
 import logging
+import matplotlib.pyplot as plt
+import pandas as pd
 
 # Logging
 logging.basicConfig(
@@ -18,9 +20,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-
-
-# Schreibt abgerufene Daten
+# Writer der Daten
 
 def ensure_outdir(path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -96,16 +96,64 @@ def open_in_explorer(file_path: Path) -> None:
         else:
             subprocess.run(["xdg-open", str(p.parent)], check=False)
     except Exception as e:
-        logging.error(f"Explorer öffnen fehlgeschlagen: {e}")
+        logger.error(f"Explorer öffnen fehlgeschlagen: {e}")
+
+# Matplotlib erweiterung
+
+def show_matplot_chart():
+    try:
+        df = pd.read_csv("data/portfolio.csv", delimiter=";")
+        tickers = df["symbol"].dropna().unique().tolist()
+        if not tickers:
+            print("Keine Ticker in CSV gefunden.")
+            return
+        print("Verfügbare Symbole:", ", ".join(tickers))
+        choice = input("Welchen Ticker anzeigen? ").strip()
+        if choice not in tickers:
+            print(f"{choice} nicht gefunden.")
+            return
+
+        # Daten für Ticker laden
+        data = df[df["symbol"] == choice].dropna(subset=["date","close"])
+        data["date"] = pd.to_datetime(data["date"], errors="coerce")
+        data = data.sort_values("date")
+
+        # nur letzte 6 Monate behalten
+        cutoff = pd.Timestamp.today() - pd.DateOffset(months=6)
+        data = data[data["date"] >= cutoff]
+
+        if data.empty:
+            print(f"Keine Daten für {choice} in den letzten 6 Monaten gefunden.")
+            return
+
+        plt.figure(figsize=(10,5))
+        plt.plot(data["date"], data["close"], marker="o", linestyle="-")
+        plt.title(f"Kursentwicklung {choice} (letzte 6 Monate)")
+        plt.xlabel("Datum")
+        plt.ylabel("Kurs")
+        plt.grid(True)
+        plt.tight_layout()
+        plt.show()
+    except Exception as e:
+        print(f"Fehler beim Erzeugen: {e}")
+
+# Menü generieren
 
 def menu_open_file():
     print("-"*28)
     print("- a : portfolio.csv")
     print("- b : portfolio.xml")
     print("- c : portfolio.json")
+    print("- d : Matplotlib Diagramm")
     print("-"*28)
-    ch = input("Welche Datei im Explorer öffnen? [a/b/c] ").strip().lower()
-    if ch.startswith("a"): open_in_explorer(Path("data/portfolio.csv"))
-    elif ch.startswith("b"): open_in_explorer(Path("data/portfolio.xml"))
-    elif ch.startswith("c"): open_in_explorer(Path("data/portfolio.json"))
-    else: print("Keine gültige Auswahl.")
+    ch = input("Welche Datei im Explorer öffnen oder Diagramm anzeigen? [a/b/c/d] ").strip().lower()
+    if ch.startswith("a"):
+        open_in_explorer(Path("data/portfolio.csv"))
+    elif ch.startswith("b"):
+        open_in_explorer(Path("data/portfolio.xml"))
+    elif ch.startswith("c"):
+        open_in_explorer(Path("data/portfolio.json"))
+    elif ch.startswith("d"):
+        show_matplot_chart()
+    else:
+        print("Keine gültige Auswahl.")

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<portfolio as_of="2025-09-08T18:48:34.706829+00:00">
+<portfolio as_of="2025-09-08T18:55:19.303828+00:00">
   <position symbol="NESN.SW" name="Nestlé S.A." currency="CHF" market="Swiss">
     <close date="2025-07-28" value="72.30999755859375" />
     <close date="2025-07-29" value="72.41999816894531" />
@@ -350,7 +350,7 @@
     <close date="2025-09-03" value="238.47000122070312" />
     <close date="2025-09-04" value="239.77999877929688" />
     <close date="2025-09-05" value="239.69000244140625" />
-    <close date="2025-09-08" value="236.93499755859375" />
+    <close date="2025-09-08" value="236.70989990234375" />
     </position>
   <position symbol="AMZN" name="Amazon.com, Inc." currency="USD" market="NasdaqGS">
     <close date="2025-07-28" value="232.7899932861328" />
@@ -382,7 +382,7 @@
     <close date="2025-09-03" value="225.99000549316406" />
     <close date="2025-09-04" value="235.67999267578125" />
     <close date="2025-09-05" value="232.3300018310547" />
-    <close date="2025-09-08" value="236.4499969482422" />
+    <close date="2025-09-08" value="236.5800018310547" />
     </position>
   <position symbol="MSFT" name="Microsoft Corporation" currency="USD" market="NasdaqGS">
     <close date="2025-07-28" value="512.5" />
@@ -414,7 +414,7 @@
     <close date="2025-09-03" value="505.3500061035156" />
     <close date="2025-09-04" value="507.9700012207031" />
     <close date="2025-09-05" value="495.0" />
-    <close date="2025-09-08" value="498.54998779296875" />
+    <close date="2025-09-08" value="498.25" />
     </position>
   <position symbol="GOOGL" name="Alphabet Inc." currency="USD" market="NasdaqGS">
     <close date="2025-07-28" value="192.5800018310547" />
@@ -446,7 +446,7 @@
     <close date="2025-09-03" value="230.66000366210938" />
     <close date="2025-09-04" value="232.3000030517578" />
     <close date="2025-09-05" value="235.0" />
-    <close date="2025-09-08" value="234.23500061035156" />
+    <close date="2025-09-08" value="234.03700256347656" />
     </position>
   <position symbol="TSLA" name="Tesla, Inc." currency="USD" market="NasdaqGS">
     <close date="2025-07-28" value="325.5899963378906" />
@@ -478,7 +478,7 @@
     <close date="2025-09-03" value="334.0899963378906" />
     <close date="2025-09-04" value="338.5299987792969" />
     <close date="2025-09-05" value="350.8399963378906" />
-    <close date="2025-09-08" value="346.9754943847656" />
+    <close date="2025-09-08" value="346.82000732421875" />
     </position>
   <position symbol="META" name="Meta Platforms, Inc." currency="USD" market="NasdaqGS">
     <close date="2025-07-28" value="717.6300048828125" />
@@ -510,7 +510,7 @@
     <close date="2025-09-03" value="737.0499877929688" />
     <close date="2025-09-04" value="748.6500244140625" />
     <close date="2025-09-05" value="752.4500122070312" />
-    <close date="2025-09-08" value="759.9199829101562" />
+    <close date="2025-09-08" value="759.0150146484375" />
     </position>
   <position symbol="NVDA" name="NVIDIA Corporation" currency="USD" market="NasdaqGS">
     <close date="2025-07-28" value="176.75" />
@@ -542,7 +542,7 @@
     <close date="2025-09-03" value="170.6199951171875" />
     <close date="2025-09-04" value="171.66000366210938" />
     <close date="2025-09-05" value="167.02000427246094" />
-    <close date="2025-09-08" value="169.56500244140625" />
+    <close date="2025-09-08" value="169.47579956054688" />
     </position>
   <position symbol="JPM" name="JPMorgan Chase &amp; Co." currency="USD" market="NYSE">
     <close date="2025-07-28" value="298.2799987792969" />
@@ -574,7 +574,7 @@
     <close date="2025-09-03" value="299.510009765625" />
     <close date="2025-09-04" value="303.82000732421875" />
     <close date="2025-09-05" value="294.3800048828125" />
-    <close date="2025-09-08" value="293.0150146484375" />
+    <close date="2025-09-08" value="293.32000732421875" />
     </position>
   <position symbol="V" name="Visa Inc." currency="USD" market="NYSE">
     <close date="2025-07-28" value="355.4700012207031" />
@@ -606,7 +606,7 @@
     <close date="2025-09-03" value="350.8699951171875" />
     <close date="2025-09-04" value="350.989990234375" />
     <close date="2025-09-05" value="343.2200012207031" />
-    <close date="2025-09-08" value="343.0899963378906" />
+    <close date="2025-09-08" value="343.04998779296875" />
     </position>
   <position symbol="MA" name="Mastercard Incorporated" currency="USD" market="NYSE">
     <close date="2025-07-28" value="568.280029296875" />
@@ -638,6 +638,6 @@
     <close date="2025-09-03" value="593.280029296875" />
     <close date="2025-09-04" value="595.6400146484375" />
     <close date="2025-09-05" value="584.219970703125" />
-    <close date="2025-09-08" value="587.4400024414062" />
+    <close date="2025-09-08" value="587.5499877929688" />
     </position>
   </portfolio>
