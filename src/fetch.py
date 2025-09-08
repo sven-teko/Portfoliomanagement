@@ -1,8 +1,24 @@
+import sys
+import subprocess
+import importlib.util
+from pathlib import Path
+
+# requirements.txt installieren wenn yfinance fehlt
+if importlib.util.find_spec("yfinance") is None:
+    print("yfinance nicht gefunden – installiere requirements.txt …")
+    req_file = Path(__file__).resolve().parent.parent / "requirements.txt"
+    try:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", str(req_file)])
+    except Exception as e:
+        print(f"Fehler bei der Installation: {e}", file=sys.stderr)
+        sys.exit(1)
+
 import yfinance as yf
-import time, argparse, json, sys
+import time, argparse, json
 from datetime import datetime, timezone
 import pandas as pd
 from utils import write_all_outputs, menu_open_file, logger
+
 
 # Liste der Ticker
 tickers = [
