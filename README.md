@@ -5,11 +5,16 @@ Fondverwaltung mit Yahoo Finance
 # Projektziel
 
 Dieses Repository kann Kurs- und Stammdaten von Fonds/ETFs als CSV, XML und JSON sammeln und versionieren.
-Die Daten werden über das Python-Paket yfinance API abgerufen und in einer klaren Ordnerstruktur abgelegt.
+Die Daten werden über Python yfinance API abgerufen und in einer klaren Ordnerstruktur abgelegt.
 
 # Verwendete Ticker & Datenquellen
 
 Liste der gewünschten Fonds/ETFs:
+
+    "NESN.SW","NOVN.SW","ROG.SW","UBSG.SW","ZURN.SW",
+    "ABBN.SW","SIKA.SW","LOGN.SW","CFR.SW","SREN.SW",
+    "AAPL","AMZN","MSFT","GOOGL","TSLA",
+    "META","NVDA","JPM","V","MA",
 
 
 - [Download latest Release](https://github.com/sven-teko/Portfoliomanagement/releases)
