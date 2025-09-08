@@ -16,8 +16,6 @@ Liste der gewünschten Fonds/ETFs:
     "AAPL","AMZN","MSFT","GOOGL","TSLA",
     "META","NVDA","JPM","V","MA",
 
-
-- [Download latest Release](https://github.com/sven-teko/Portfoliomanagement/releases)
 - [Yahoo Finance](https://finance.yahoo.com) via [yfinance](https://pypi.org/project/yfinance/)
 - Repository-CSV
 
